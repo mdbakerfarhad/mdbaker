@@ -77,6 +77,14 @@ var typed = new Typed(".typing-text", {
     backSpeed: 25,
     backDelay: 500,
 });
+
+var typed = new Typed(".typing-text1", {
+    strings: ["✨ Living in the Moment ⚡", "✨ Turning Dreams into Reality 💟" , "✨ Disappearing into the Unknown Tomorrow 🌙 "],
+    loop: true,
+    typeSpeed: 60,
+    backSpeed: 1,
+    backDelay: 300,
+});
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
@@ -222,9 +230,10 @@ srtop.reveal('.home .github', { interval: 800 });
 srtop.reveal('.home .twitter', { interval: 1000 });
 srtop.reveal('.home .telegram', { interval: 600 });
 srtop.reveal('.home .instagram', { interval: 600 });
-srtop.reveal('.home .dev', { interval: 600 });
+srtop.reveal('.home .mail', { interval: 600 });
 
 /* SCROLL ABOUT */
+srtop.reveal('.about .image', { delay: 400 });
 srtop.reveal('.about .content h3', { delay: 200 });
 srtop.reveal('.about .content .tag', { delay: 200 });
 srtop.reveal('.about .content p', { delay: 200 });
@@ -245,6 +254,12 @@ srtop.reveal('.work .box', { interval: 200 });
 /* SCROLL EXPERIENCE */
 srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
+
+/* SCROLL PUBLICATIONS */
+srtop.reveal('.publications-img', { delay: 400 });
+srtop.reveal('.publications-title ', { delay: 400 });
+srtop.reveal('.publications-subtitle ', { delay: 600 });
+srtop.reveal('.publications-btns', { delay: 70 });
 
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });

@@ -438,7 +438,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+  background: rgb(248, 241, 241);
 }
 
 .about .row {
@@ -454,13 +454,20 @@ header .navbar ul li a:hover {
   flex: 1 1 35rem;
 }
 
+.about .row .image figcaption {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #d000ff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .about .row .image img {
   margin: 4rem;
   width: 30rem;
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -1130,6 +1137,7 @@ header .navbar ul li a:hover {
   background: #f6fbe5;
   min-height: 60vh;
 }
+
 /* Main Container Styling */
 .publications-container {
   width: 100%;
@@ -1153,9 +1161,8 @@ header .navbar ul li a:hover {
 }
 
 .publications-img img {
-  width: 65%;
-  /* Image fills 60% of the container */
-  height: auto;
+  width: 55%;  /* Image fills 60% of the container */
+  height: 20%;
   margin-bottom: 1rem;
   transition: 0.3s ease;
   cursor: pointer;
@@ -1182,7 +1189,7 @@ header .navbar ul li a:hover {
 }
 
 .publications-subtitle {
-  width: 65%;
+  width: 60%;
   /* Make text width slightly more than image width */
   font-size: 17px;
   line-height: 1.6;
@@ -1270,7 +1277,7 @@ header .navbar ul li a:hover {
 /* contact section starts */
 .contact {
   background: #e5ecfb;
-  min-height: 60vh; 
+  min-height: 60vh;
 }
 
 .contact .container {
@@ -1281,8 +1288,10 @@ header .navbar ul li a:hover {
   margin: 2rem 5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   display: flex;
-  align-items: center; /* Vertically centers the content */
-  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+  /* Vertically centers the content */
+  justify-content: center;
+  /* Horizontally centers the content */
 }
 
 .contact .container .content {
