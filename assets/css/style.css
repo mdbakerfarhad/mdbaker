@@ -287,7 +287,7 @@ header .navbar ul li a:hover {
   position: absolute;
   line-height: 0;
   padding: 1.6rem 3rem;
-  border-radius: 4em;
+  border-radius: 4rem;
   transition: 0.5s;
   color: #fff;
   background: #2506ad;
@@ -328,7 +328,7 @@ header .navbar ul li a:hover {
 }
 
 .home .btn:hover {
-  background: #1a047e;
+  background: #ff5722;
 }
 
 .home .btn:hover i {
@@ -1208,7 +1208,7 @@ header .navbar ul li a:hover {
   font-weight: 600;
   font-size: 15px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #2506ad;
   border: none;
   border-radius: 0.3rem;
   display: inline-flex;
