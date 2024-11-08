@@ -1,12 +1,12 @@
 [
   {
     "name": "Movie Recommendation(webapp)",
-    "desc": "",
+    "desc": "In this project, we worked with movie recommendation system using Machine Learning & built Web Application. ",
     "image": "MRS",
     "category": "machinelearning",
     "links": {
       "view": "",
-      "code": ""
+      "code": "https://github.com/mdbakerfarhad/Movie-Recommendation-System-Using-Machine-Learning-and-Web-App"
     }
   },
 
