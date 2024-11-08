@@ -47,7 +47,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 480px; margin: 1rem">
-      <img draggable="false" src="https://github.com/mdbakerfarhad/mdbaker/blob/main/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="https://raw.githubusercontent.com/mdbakerfarhad/mdbaker/refs/heads/main/assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
