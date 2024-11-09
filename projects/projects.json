@@ -21,7 +21,7 @@
     }
   },
 
-   {
+  {
     "name": "The Consumer Behavior and Shopping Habits",
     "desc": "Understanding and predicting consumer purchasing behavior is crucial for businesses aiming to enhance their marketing strategies and increase sales.",
     "image": "CBSH",
@@ -32,7 +32,7 @@
     }
   },
 
-   {
+  {
     "name": "Online Flight Booking Management System ",
     "desc": "In this project, we attempts to recreate the fundamental concepts of the booking system for airlines",
     "image": "OFBS",
