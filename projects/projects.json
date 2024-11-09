@@ -30,6 +30,16 @@
       "view": "",
       "code": "https://github.com/mdbakerfarhad/CSE311_SEC-7_GROUP-09_PROJECT"
     }
+  },
+
+   {
+    "name": "The Consumer Behavior and Shopping Habits",
+    "desc": "Understanding and predicting consumer purchasing behavior is crucial for businesses aiming to enhance their marketing strategies and increase sales.",
+    "image": "CBSH",
+    "category": "machinelearning",
+    "links": {
+      "view": "",
+      "code": "https://github.com/mdbakerfarhad/CSE445"
+    }
   }
-  
 ]
