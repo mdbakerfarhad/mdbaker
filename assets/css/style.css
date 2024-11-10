@@ -1273,8 +1273,152 @@ header .navbar ul li a:hover {
     font-size: 0.8rem;
   }
 }
+/* publications section ends */
 
-/* contact section starts */
+
+/* certifications section */
+
+.certifications {
+  background: linear-gradient(135deg, #dbca58, #81C784);
+  padding: 50px 10px; /* Reduced padding for more central alignment */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certifications h2 {
+  font-size: 3.5rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.certifications-posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(480px, 1fr)); /* Centered items with min-width */
+  gap: 20px;
+  max-width: 1200px; /* Maximum width for centered alignment */
+  justify-content: center;
+}
+
+.certifications-post-item {
+  background: #2b2b2b;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.certifications-post-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.certifications-banner-box {
+  width: 480px;
+  height: 300px; /* Set a consistent height for the images */
+  overflow: hidden;
+}
+
+.certifications-banner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.certifications-post-item:hover .certifications-banner-box img {
+  transform: scale(1.05);
+}
+
+.certifications-content {
+  padding: 20px;
+}
+
+.certifications-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #bbbbbb;
+  font-size: 1.1rem;
+}
+
+.certifications-meta .dot {
+  background: #bbbbbb;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.certifications-item-title {
+  font-size: 1.5rem;
+  color: #FFEB3B;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.certifications-post-item:hover .certifications-item-title {
+  color: #FF9800;
+}
+
+.certifications-text {
+  color: #cccccc;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .certifications-posts-list {
+    grid-template-columns: repeat(2, minmax(280px, 1fr)); /* 2 columns on large tablets and small desktops */
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications-posts-list {
+    grid-template-columns: 1fr; /* 1 column on tablets and large phones */
+  }
+
+  .certifications h2 {
+    font-size: 2.5rem; /* Smaller heading for tablets */
+  }
+
+  .certifications-banner-box {
+    height: 250px; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications h2 {
+    font-size: 2rem; /* Even smaller heading for mobile phones */
+  }
+
+  .certifications-banner-box {
+    height: 200px; /* Compact height for mobile */
+  }
+
+  .certifications-post-item {
+    padding: 15px;
+  }
+
+  .certifications-meta {
+    font-size: 0.8rem; /* Smaller meta font */
+  }
+
+  .certifications-item-title {
+    font-size: 1rem; /* Smaller title font */
+  }
+
+  .certifications-text {
+    font-size: 0.85rem; /* Smaller text font */
+  }
+}
+
+/* certifications section ends */
+
+
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
