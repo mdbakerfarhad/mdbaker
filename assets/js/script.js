@@ -249,7 +249,7 @@ srtop.reveal('.skills .container .bar', { delay: 400 });
 srtop.reveal('.education .box', { interval: 200 });
 
 /* SCROLL PROJECTS */
-srtop.reveal('.projects .box', { interval: 200 });
+srtop.reveal('.projects', { interval: 400 });
 
 /* SCROLL EXPERIENCE */
 srtop.reveal('.experience .timeline', { delay: 400 });
