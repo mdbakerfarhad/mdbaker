@@ -1279,7 +1279,7 @@ header .navbar ul li a:hover {
 /* certifications section */
 
 .certifications {
-  background: linear-gradient(135deg, #dbca58, #81C784);
+  background: linear-gradient( #dbca58, #81C784);
   padding: 50px 10px; /* Reduced padding for more central alignment */
   border-radius: 12px;
   display: flex;
@@ -1422,6 +1422,7 @@ header .navbar ul li a:hover {
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
+  align-items: center;
 }
 
 .contact .container {
