@@ -262,7 +262,7 @@ srtop.reveal('.publications-subtitle ', { delay: 600 });
 srtop.reveal('.publications-btns', { delay: 70 });
 
 /* SCROLL CERTIFICATIONS */
-srtop.reveal('.certifications-banner-box', { delay: 200 });
+// srtop.reveal('.certifications-banner-box', { delay: 200 });
 srtop.reveal('.certifications-content', { delay: 300 });
 
 /* SCROLL CONTACT */
