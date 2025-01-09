@@ -419,7 +419,7 @@
 
 
   <!-- contact section starts -->
-  <section class="contact" id="contact">
+  <!-- <section class="contact" id="contact">
 
     <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
@@ -456,7 +456,75 @@
         </form>
       </div>
     </div>
+  </section> -->
+
+  <section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  
+    <div class="container">
+  
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+        <form id="contact-form" onsubmit="sendDirectlyToWhatsApp(event)">
+  
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
+  
+  <script>
+    function sendDirectlyToWhatsApp(event) {
+      event.preventDefault(); // Prevent default form submission behavior
+  
+      // Get form values
+      const name = document.querySelector('input[name="name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const phone = document.querySelector('input[name="phone"]').value;
+      const message = document.querySelector('textarea[name="message"]').value;
+  
+      // Your WhatsApp number (with country code)
+      const whatsappNumber = "8801882131910";
+  
+      // Construct the WhatsApp message
+      const whatsappMessage = `Hello, you have a new message from your website:\n\n` +
+                              `Name: ${name}\n` +
+                              `Email: ${email}\n` +
+                              `Phone: ${phone}\n` +
+                              `Message: ${message}`;
+  
+      // Encode the message
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+  
+      // Redirect to WhatsApp with the pre-filled message
+      window.location.href = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    }
+  </script>
+  
   <!-- contact section ends -->
 
   <!-- footer section starts -->
