@@ -584,7 +584,7 @@ header .navbar ul li a:hover {
 
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, #0b1359, #0b1359e2);
 }
 
 .skills h2 {
@@ -596,7 +596,7 @@ header .navbar ul li a:hover {
 }
 
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
+  background: rgba(0, 0, 22, 0.235);
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
@@ -616,8 +616,8 @@ header .navbar ul li a:hover {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 22, 0.64);
   transition: 0.2s;
 }
 
@@ -670,7 +670,8 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  /* background: #b3b4bd; */
+  background: #eae7dc;
   min-height: 88vh;
 }
 
@@ -793,8 +794,8 @@ header .navbar ul li a:hover {
 
 /* projects section starts */
 .projects {
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: #0e0f31;
+  /* background: linear-gradient(to bottom, #420177, #420177); */
 }
 
 .projects h2 {
@@ -933,6 +934,10 @@ header .navbar ul li a:hover {
 /* projects section ends */
 
 /* experience section starts */
+.experience{
+  background-color: #cadbdd;
+}
+
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -1135,7 +1140,7 @@ header .navbar ul li a:hover {
 /*=====publications=====*/
 
 .publications {
-  background: #f6fbe5;
+  background: #d9d1b8;
   min-height: 60vh;
 }
 
@@ -1146,7 +1151,7 @@ header .navbar ul li a:hover {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.819);
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -1181,7 +1186,7 @@ header .navbar ul li a:hover {
   margin-bottom: 1rem;
   font-size: 27px;
   font-weight: bold;
-  color: #333;
+  color: #0e0e0e;
   text-align: center;
   margin: auto;
   /* Center-align the title within the container */
@@ -1194,7 +1199,7 @@ header .navbar ul li a:hover {
   /* Make text width slightly more than image width */
   font-size: 17px;
   line-height: 1.6;
-  color: #555;
+  color: #000000;
   text-align: justify;
   padding: 1rem;
   margin: auto;
@@ -1280,7 +1285,7 @@ header .navbar ul li a:hover {
 /* certifications section */
 
 .certifications {
-  background: linear-gradient( #dbca58, #81C784);
+  background: linear-gradient( #4e6c87, #649889);
   padding: 50px 10px; /* Reduced padding for more central alignment */
   border-radius: 12px;
   display: flex;
