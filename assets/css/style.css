@@ -1285,7 +1285,7 @@ header .navbar ul li a:hover {
 /* certifications section */
 
 .certifications {
-  background: linear-gradient( #4e6c87, #649889);
+  background: linear-gradient( #cfc9c9, #649889);
   padding: 50px 10px; /* Reduced padding for more central alignment */
   border-radius: 12px;
   display: flex;
@@ -1293,8 +1293,12 @@ header .navbar ul li a:hover {
   align-items: center;
 }
 
+.certifications .heading span{
+  color: #ff00fb;
+}
+
 .certifications h2 {
-  font-size: 3.5rem;
+  font-size: 3.9rem;
   color: #000000;
   text-align: center;
   margin-bottom: 30px;
