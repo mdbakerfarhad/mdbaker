@@ -71,6 +71,11 @@ header .logo{
   text-decoration: none;
   color: #0E2431;
 }
+
+header .logo span{
+  color: #ff00ff;
+}
+
 header .logo i {
   font-size: 2.2rem;
 }
