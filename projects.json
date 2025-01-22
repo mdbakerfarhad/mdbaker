@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Movie Recommendation(webapp)",
+    "desc": "In this project, we worked with movie recommendation system using Machine Learning & built Web Application. ",
+    "image": "MRS",
+    "category": "machinelearning",
+    "links": {
+      "view": "",
+      "code": "https://github.com/mdbakerfarhad/Movie-Recommendation-System-Using-Machine-Learning-and-Web-App"
+    }
+  },
+
+  {
+    "name": "Movie Ticket Booking System",
+    "desc": "The Online Movie Ticket Booking System is a web-based platform designed to simplify the process of purchasing movie tickets online.",
+    "image": "MTBS",
+    "category": "website",
+    "links": {
+      "view": "https://movieticketbookingsystem1.000webhostapp.com/",
+      "code": "https://github.com/mdbakerfarhad/MTBS"
+    }
+  },
+
+  {
+    "name": "The Consumer Behavior and Shopping Habits",
+    "desc": "Understanding and predicting consumer purchasing behavior is crucial for businesses aiming to enhance their marketing strategies and increase sales.",
+    "image": "CBSH",
+    "category": "machinelearning",
+    "links": {
+      "view": "",
+      "code": "https://github.com/mdbakerfarhad/CSE445"
+    }
+  },
+
+  {
+    "name": "Online Flight Booking Management System ",
+    "desc": "In this project, we attempts to recreate the fundamental concepts of the booking system for airlines",
+    "image": "OFBS",
+    "category": "website",
+    "links": {
+      "view": "",
+      "code": "https://github.com/mdbakerfarhad/CSE311_SEC-7_GROUP-09_PROJECT"
+    }
+  }
+]
