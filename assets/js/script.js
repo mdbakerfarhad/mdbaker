@@ -183,16 +183,7 @@ function showProjects(projects) {
   /* SCROLL PROJECTS */
   srtop.reveal(".projects .box", { interval: 200 });
 }
-fetchData().then((data) => {
-  showSkills(data);
-});
-fetchData("projects").then((data) => {
-  showProjects(data);
-});
-// <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-  max: 15,
-});
+
 // <!-- tilt js effect ends -->
 // pre loader start
 // function loader() {
@@ -204,6 +195,87 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // window.onload = fadeOut;
 // pre loader end
 // disable developer mode
+
+
+// fetch Certificates start
+
+function getCertificates() {
+  return fetch("certificates.json")
+    .then((response) => response.json())
+    .then((data) => {
+      return data;
+    });
+}
+
+function showCertificates(certificates) {
+  let certificatesContainer = document.querySelector(".certificates .box-container");
+  let certificatesHTML = "";
+
+  certificates.forEach((certificate) => {
+    certificatesHTML += `
+      <div class="grid-item ${certificate.category.toLowerCase().replace(/\s/g, '')}">
+        <figure class="certifications-banner-box">
+          <img src="${certificate.image}" alt="${certificate.title}">
+        </figure>
+        <div class="certifications-content">
+          <div class="certifications-meta">
+            <p class="certifications-category">${certificate.category}</p>
+            <span class="dot"></span>
+            <time datetime="${certificate.date}">${new Date(certificate.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+          </div>
+          <h3 class="h3 certifications-item-title">${certificate.title}</h3>
+          <p class="certifications-text">${certificate.description || certificate.description}</p>
+        </div>
+      </div>`;
+  });
+
+  certificatesContainer.innerHTML = certificatesHTML;
+
+  // Initialize Isotope
+  var $grid = $(".certificates .box-container").isotope({
+    itemSelector: ".grid-item",
+    layoutMode: "fitRows",
+    masonry: {
+      columnWidth: 200,
+    },
+  });
+
+  // Filter items on button click
+  $(".button-group").on("click", "button", function () {
+    $(".button-group").find(".is-checked").removeClass("is-checked");
+    $(this).addClass("is-checked");
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // Initialize ScrollReveal
+  const srtop = ScrollReveal({
+    origin: "top",
+    distance: "80px",
+    duration: 1000,
+    reset: true,
+  });
+  srtop.reveal(".certificates .box", { interval: 200 });
+}
+
+// Fetch and display certificates
+getCertificates().then((data) => {
+  showCertificates(data);
+});
+fetchData().then((data) => {
+  showSkills(data);
+});
+fetchData("projects").then((data) => {
+  showProjects(data);
+});
+
+// <!-- tilt js effect starts -->
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+});
+
+
+
 document.onkeydown = function (e) {
   if (e.keyCode == 123) {
     return false;
@@ -272,9 +344,9 @@ srtop.reveal(".publications-img", { delay: 400 });
 srtop.reveal(".publications-title ", { delay: 400 });
 srtop.reveal(".publications-subtitle ", { delay: 600 });
 srtop.reveal(".publications-btns", { delay: 70 });
-/* SCROLL CERTIFICATIONS */
-// srtop.reveal('.certifications-banner-box', { delay: 200 });
-srtop.reveal(".certifications-content", { delay: 300 });
-/* SCROLL CONTACT */
-srtop.reveal(".contact .container", { delay: 400 });
-srtop.reveal(".contact .container .form-group", { delay: 400 });
+// /* SCROLL CERTIFICATIONS */
+// // srtop.reveal('.certifications-banner-box', { delay: 200 });
+// srtop.reveal(".certificates-content", { delay: 300 });
+// /* SCROLL CONTACT */
+// srtop.reveal(".contact .container", { delay: 400 });
+// srtop.reveal(".contact .container .form-group", { delay: 400 });

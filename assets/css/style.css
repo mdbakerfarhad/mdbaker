@@ -1325,153 +1325,166 @@ header .navbar ul li a:hover {
 }
 /* publications section ends */
 
-
 /* certifications section */
-
-.certifications {
-  background: linear-gradient( #cfc9c9, #649889);
+.certificates {
+  background: #007bb6;
   padding: 50px 10px; /* Reduced padding for more central alignment */
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  }
 
-.certifications .heading span{
-  color: #ff00fb;
-}
-
-.certifications h2 {
-  font-size: 3.9rem;
-  color: #000000;
+.certificates h2 {
+  color: #fff;
+  padding: 1rem;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.certifications-posts-list {
+.certificates .heading span {
+  color: rgb(255, 230, 0);
+}
+
+.certificates .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificates .button-group .btn {
+  outline: none;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.certificates .button-group .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.certificates .button-group .btn.is-checked {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.certificates .box-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(480px, 1fr)); /* Centered items with min-width */
-  gap: 20px;
-  max-width: 1200px; /* Maximum width for centered alignment */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Ensuring proper gap between certificates */
+  /* max-width: 1400px; */
+  width: 100%;
+  justify-content: center;
+  margin-left: 160px;   /* Adding right margin for horizontal spacing */
+}
+
+.certificates .box-container .grid-item {
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #2b2b2b;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 550px; /* Ensuring consistent size */
+  max-height: 460px; /* Fixed height to maintain uniformity */
+  margin-bottom: 20px; /* Adding bottom margin for vertical spacing */
+  margin-left: 10px; /* Adding left margin for horizontal spacing */
+  margin-right: 10px; /* Adding right margin for horizontal spacing */
+}
+
+.certificates .box-container .grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.certificates .box-container .grid-item .certifications-banner-box {
+  width: 100%;
+  height: 460px; /* Fixed height for uniformity */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.certifications-post-item {
-  background: #2b2b2b;
-  border-radius: 16px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.certifications-post-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.certifications-banner-box {
-  width: 480px;
-  height: 300px; /* Set a consistent height for the images */
-  overflow: hidden;
-}
-
-.certifications-banner-box img {
+.certificates .box-container .grid-item .certifications-banner-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+  object-fit: cover; /* Ensuring images fit properly */
+  border-radius: 0.8rem;
+  transition: transform 0.3s ease;
 }
 
-.certifications-post-item:hover .certifications-banner-box img {
-  transform: scale(1.05);
+.certificates .box-container .grid-item:hover .certifications-banner-box img {
+  transform: scale(1.03);
 }
 
-.certifications-content {
+.certificates .box-container .grid-item .certifications-content {
   padding: 20px;
+  width: 100%;
+  flex-grow: 1; /* Ensuring content fills the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start;
 }
 
-.certifications-meta {
+.certificates .box-container .grid-item .certifications-meta {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-  color: #bbbbbb;
-  font-size: 1.1rem;
+  gap: 0.5rem;
+  color: #cccccc;
+  font-size: 1.0rem;
 }
 
-.certifications-meta .dot {
-  background: #bbbbbb;
+.certificates .box-container .grid-item .certifications-meta .dot {
   width: 5px;
   height: 5px;
+  background: #cccccc;
   border-radius: 50%;
 }
 
-.certifications-item-title {
-  font-size: 1.5rem;
+.certificates .box-container .grid-item .certifications-item-title {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
   color: #FFEB3B;
-  margin: 10px 0;
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
-.certifications-post-item:hover .certifications-item-title {
-  color: #FF9800;
-}
-
-.certifications-text {
-  color: #cccccc;
+.certificates .box-container .grid-item .certifications-text {
   font-size: 1.3rem;
+  color: #cccccc;
   line-height: 1.6;
+  margin-bottom: 0.5rem;
+  flex-grow: 1; /* Allow text to fill space */
 }
 
-/* Responsive styles */
-@media (max-width: 1200px) {
-  .certifications-posts-list {
-    grid-template-columns: repeat(2, minmax(280px, 1fr)); /* 2 columns on large tablets and small desktops */
-  }
-}
-
-@media (max-width: 768px) {
-  .certifications-posts-list {
-    grid-template-columns: 1fr; /* 1 column on tablets and large phones */
-  }
-
-  .certifications h2 {
-    font-size: 2.5rem; /* Smaller heading for tablets */
-  }
-
-  .certifications-banner-box {
-    height: 250px; /* Adjusted height for smaller screens */
+@media screen and (max-width: 1200px) {
+  .certificates .box-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
-  .certifications h2 {
-    font-size: 2rem; /* Even smaller heading for mobile phones */
-  }
-
-  .certifications-banner-box {
-    height: 200px; /* Compact height for mobile */
-  }
-
-  .certifications-post-item {
-    padding: 15px;
-  }
-
-  .certifications-meta {
-    font-size: 0.8rem; /* Smaller meta font */
-  }
-
-  .certifications-item-title {
-    font-size: 1rem; /* Smaller title font */
-  }
-
-  .certifications-text {
-    font-size: 0.85rem; /* Smaller text font */
+@media screen and (max-width: 768px) {
+  .certificates .box-container {
+    grid-template-columns: 1fr;
   }
 }
 
 /* certifications section ends */
 
+/* contact section */
 
 .contact {
   background: #e5ecfb;
