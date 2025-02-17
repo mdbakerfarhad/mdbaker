@@ -1,7 +1,5 @@
 # Portfolio-Baker
 
-![Portfolio Screenshot](ss.png)
-
 This is the repository for my personal portfolio website, hosted at [mdbaker.vercel.app](https://mdbaker.vercel.app/).
 
  ![Portfolio](https://github.com/mdbakerfarhad/mdbaker/blob/main/assets/images/Home_Page.png)
