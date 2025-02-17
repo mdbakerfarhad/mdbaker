@@ -4,7 +4,7 @@
 
 This is the repository for my personal portfolio website, hosted at [mdbaker.vercel.app](https://mdbaker.vercel.app/).
 
- ![Portfolio](link_to_Churn_screenshot)
+ ![Portfolio](https://github.com/mdbakerfarhad/mdbaker/blob/main/assets/images/Home_Page.png)
 
 ---
 
@@ -55,7 +55,6 @@ Deployed using:
 - Responsive design for all devices.
 - Dynamic content loading from JSON files.
 - Clean and modern UI.
-- **CSE Graduate from North South University | Developer**
 
 ---
 
