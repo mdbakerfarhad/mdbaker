@@ -1,4 +1,24 @@
 [
+    {
+    "name": "Daily Nihongo",
+    "desc": "All-in-one platform for mastering the Japanese language (日本語) step-by-step. From beginner to advanced levels, provide comprehensive resources, interactive lessons, and practical exercises to help you achieve fluency in Japanese.",
+    "image": "dailynihongo",
+    "category": "website",
+    "links": {
+      "view": "https://dailynihongo.netlify.app/",
+      "code": ""
+    }
+  },
+    {
+    "name": "Abir Corporation",
+    "desc": "Abir Corporation is a leading provider of innovative solutions and services in the technology sector, dedicated to delivering excellence and driving digital transformation for businesses worldwide.",
+    "image": "abircorp",
+    "category": "website",
+    "links": {
+      "view": "",
+      "code": "https://github.com/mdbakerfarhad/Movie-Recommendation-System-Using-Machine-Learning-and-Web-App"
+    }
+  },
   {
     "name": "Movie Recommendation(webapp)",
     "desc": "In this project, we worked with movie recommendation system using Machine Learning & built Web Application. ",
